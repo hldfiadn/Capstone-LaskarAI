@@ -4,6 +4,9 @@ import tensorflow as tf
 import os
 import requests
 
+st.set_page_config(page_title="Prediksi Penyakit", layout="centered")
+st.title("Prediksi Penyakit (Heart Disease, Stroke, Diabetes)")
+
 MODEL_URL = "https://raw.githubusercontent.com/hldfiadn/Capstone-LaskarAI/main/mnn5.keras"
 MODEL_PATH = "mnn5.keras"
 
@@ -12,9 +15,6 @@ if not os.path.exists(MODEL_PATH):
         r = requests.get(MODEL_URL)
         with open(MODEL_PATH, "wb") as f:
             f.write(r.content)
-
-st.set_page_config(page_title="Prediksi Penyakit", layout="centered")
-st.title("Prediksi Penyakit (Heart Disease, Stroke, Diabetes)")
 
 def binary_object(label):
     return st.selectbox(label, [0, 1], format_func=lambda x: "Ya" if x==1 else "Tidak")
