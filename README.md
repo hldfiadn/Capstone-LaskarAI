@@ -28,9 +28,13 @@ Dataset yang digunakan dalam proyek ini diharapkan berisi fitur-fitur yang relev
 ## Struktur Proyek
 
 ├── Prediksi_Penyakit_Kronis.ipynb
+
 ├── requirements.txt
+
 └── README.md
+
 └── data/ (Jika ada folder untuk data)
+
 └── (nama_file_dataset.csv)
 
 
@@ -92,4 +96,8 @@ Anda akan melihat output akurasi dan metrik lainnya untuk set pelatihan dan peng
 
 ## Kontributor
 
-* [Nama Anda/Nama Kontributor Lain]
+1. A001XBM122 – Dewi Kunthi Siswati Suryo – IPB University
+2. A001XBM196 – Halida Fiadnin – IPB University
+3. A001XBM223 – Illinia Malika Putri – IPB University
+4. A001YBM349 – Muhammad Rizky Fajar – IPB University
+
