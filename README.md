@@ -1,6 +1,6 @@
 # Proyek Prediksi Penyakit Kronis
 
-Proyek ini bertujuan untuk membangun model prediksi untuk beberapa penyakit kronis berdasarkan dataset yang diberikan. Model yang digunakan adalah jaringan saraf tiruan (Artificial Neural Network/ANN) yang dibangun dengan PyTorch.
+Proyek ini bertujuan untuk membangun model prediksi untuk beberapa penyakit kronis berdasarkan dataset yang diberikan. Model yang digunakan adalah Multi-output Neural Network (MNN) yang dibangun menggunakan TensorFlow.
 
 ## Daftar Isi
 
@@ -15,15 +15,15 @@ Proyek ini bertujuan untuk membangun model prediksi untuk beberapa penyakit kron
 
 ## Pengantar
 
-Penyakit kronis merupakan masalah kesehatan global yang memerlukan deteksi dini dan manajemen yang efektif. Proyek ini berfokus pada pengembangan model pembelajaran mesin yang dapat memprediksi risiko penyakit kronis tertentu (misalnya, diabetes, penyakit jantung, dll., tergantung pada kolom target dalam dataset) berdasarkan fitur-fitur kesehatan yang relevan.
+Penyakit kronis merupakan masalah kesehatan global yang memerlukan deteksi dini dan manajemen yang efektif. Proyek ini berfokus pada pengembangan model pembelajaran mesin yang dapat memprediksi risiko penyakit kronis tertentu (misalnya, diabetes, penyakit jantung, dan stroke) berdasarkan fitur-fitur kesehatan yang relevan.
 
 ## Dataset
 
-Dataset yang digunakan dalam proyek ini diharapkan berisi fitur-fitur yang relevan untuk prediksi penyakit kronis, seperti data demografi, hasil tes laboratorium, riwayat kesehatan, dll.
+Dataset yang digunakan dalam proyek ini diharapkan berisi fitur-fitur yang relevan untuk prediksi penyakit kronis, seperti data demografi, riwayat kesehatan, dll.
 
-* **Nama File Dataset:** (Mohon tentukan nama file dataset jika ada, contoh: `data_penyakit_kronis.csv`)
+* **Nama File Dataset:** `heart_disease_health_indicators_BRFSS2015.csv`)
 * **Format:** CSV
-* **Kolom Target:** (Misalnya: `Diabetes`, `Penyakit Jantung`, dll. Berdasarkan notebook, ini tampaknya dinamis dan melibatkan beberapa kolom target.)
+* **Kolom Target:** (Misalnya: `Diabetes`, `Penyakit Jantung`, `Stroke`)
 
 ## Struktur Proyek
 
@@ -33,15 +33,16 @@ Dataset yang digunakan dalam proyek ini diharapkan berisi fitur-fitur yang relev
 
 └── README.md
 
-└── data/ (Jika ada folder untuk data)
+└── dashboard_inferensi_Streamlit.py
 
-└── (nama_file_dataset.csv)
+└── mnn5.keras
+
+└── heart_disease_health_indicators_BRFSS2015.csv
 
 
 * `Prediksi_Penyakit_Kronis.ipynb`: Notebook Jupyter yang berisi semua kode untuk pra-pemrosesan data, pembangunan model, pelatihan, evaluasi, dan visualisasi.
 * `requirements.txt`: Daftar semua dependensi Python yang diperlukan untuk menjalankan proyek ini.
 * `README.md`: Berkas penjelasan proyek ini.
-* `data/`: (Opsional) Direktori untuk menyimpan file dataset.
 
 ## Instalasi
 
@@ -90,9 +91,6 @@ Notebook akan menampilkan hasil evaluasi model untuk setiap penyakit kronis yang
 
 Anda akan melihat output akurasi dan metrik lainnya untuk set pelatihan dan pengujian.
 
-## Lisensi
-
-(Tambahkan informasi lisensi di sini, contoh: Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE.md](LICENSE.md) untuk detailnya.)
 
 ## Kontributor
 
